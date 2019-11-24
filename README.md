@@ -21,7 +21,7 @@ $ docker pull bhavik9243/polynote-spark:latest
 First clone this repository to your local system and cd into it.
 ```sh
 $ cd docker-polynote-spark
-$ docker run -itd --name polynote -p 127.0.0.1:8192:8192 -p 127.0.0.1:4040-4050:4040-4050 -v config:/opt/spark/conf -v notebooks:/opt/notebooks bhavik9243/polynote-spark:latest
+$ docker run -itd --name polynote -p 127.0.0.1:8192:8192 -p 127.0.0.1:4040-4050:4040-4050 -v `pwd`/data:/data -v `pwd`/config:/opt/spark/conf -v `pwd`/notebooks:/opt/notebooks bhavik9243/polynote-spark:latest
 $ docker start polynote
 $ docker stop polynote
 ```
