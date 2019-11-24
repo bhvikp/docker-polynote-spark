@@ -4,7 +4,7 @@ Dockerized Polynote notebook with spark and first class scala support.
 
 ### Features!
 
-    - Apache Spark 2.4.1
+    - Apache Spark 2.4.4
     - Polynote
     - AWS S3 libraries for Spark
     
